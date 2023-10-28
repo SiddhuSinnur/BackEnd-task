@@ -50,20 +50,12 @@ public class UserDatabase {
         UserDatabase db = new UserDatabase();
 
         // Adding users
-        db.addUser("Ganesh", "Ganesh pote", "ganesh@gmail.com");
-        db.addUser("Mahesh", "Mahesh lodde", "mahesh@gmail.com");
+        db.addUser("Ganesh1", "Ganesh pote", "ganesh@gmail.com");
+        db.addUser("Mahesh2", "Mahesh lodde", "mahesh@gmail.com");
 
         // Retrieving and printing user information
-        System.out.println(db.getUser("Ganesh"));
-        System.out.println(db.getUser("Mahesh")); // Non-existent user
-
-        // Updating user information
-        db.updateUser("Ganesh", "Updated Ganesh pote", "updated-ganesh@gmail.com");
-        System.out.println(db.getUser("Ganesh"));
-
-        // Deleting a user
-        db.deleteUser("Mahesh");
-        db.listUsers();
+        System.out.println(db.getUser("Ganesh1"));
+        System.out.println(db.getUser("Mahesh2")); 
     }
 }
 
@@ -100,11 +92,7 @@ class User {
 
     @Override
     public String toString() {
-        return "welcome " +
-                "username='" + username + '\'' +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                '}';
+        return "welcome, \n" +"   username :: " + username +"\n   name :: " + name +"\n   email :: " + email ;
     }
 }
 
